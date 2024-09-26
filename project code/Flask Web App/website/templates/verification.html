@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %} verify {% endblock %}
+{% block content %} 
+ 
+ <div id ="heading">
+    <br><br><br><br>
+    <h1><center ><i>Visual Cryptography</i></center></h1>
+    <center><img src="{{ url_for('static', filename='final.png') }}"></center>
+    
+    
+</div>
+<form method="POST">
+    <div class="form-group">
+        <label for = "otp">Enter OTP</label>
+        <input
+            type="text"
+            class = "form-control"
+            id="otp"
+            name="otp"
+            placeholder="1234"
+        />
+    </div>
+    <br/>
+    <button type="submit" class = "btn btn-primary">Login</button>
+</body>
+{% endblock %}

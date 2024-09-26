@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %} merge {% endblock %}
+{% block content %} 
+ 
+ <div id ="heading">
+    <br><br><br><br>
+    <h1><center ><i>Upload File </i></center></h1>
+    <!--<img src="{{url_for('static',filename='a_A.png')}}">-->
+    
+</div>
+    <form method = "POST" enctype = 'multipart/form-data'>
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        {{form.submit()}}
+    </form>
+</body>
+{% endblock %}
